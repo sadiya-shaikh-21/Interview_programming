@@ -12,9 +12,18 @@ Problem Approach:
 Complete code in the hint.
 */
 
+1) 
 class Solution:
     # @param A : integer
     # @return a strings
     def findDigitsInBinary(self, A):
         return int(bin(A).split('0b')[1])
 
+2)
+ 
+def bin(n):
+ 
+    if n > 1:
+        bin(n//2)
+ 
+    print(n % 2, end="")
